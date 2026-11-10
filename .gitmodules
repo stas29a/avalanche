@@ -1,0 +1,3 @@
+[submodule "tests/comparison"]
+	path = tests/comparison
+	url = git@github.com:stas29a/avalanche-benchmarks.git

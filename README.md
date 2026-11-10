@@ -5,6 +5,13 @@ supports binary `GET` and `SET` commands over TCP, uses Tokio for networking, an
 stores values in sharded Papaya hash maps. Commands execute directly in each
 connection's task through a replaceable `CommandExecutor` implementation.
 
+The benchmark suite lives in the [avalanche-benchmarks](https://github.com/stas29a/avalanche-benchmarks)
+Git submodule at `tests/comparison`. Initialize it before running benchmarks:
+
+```sh
+git submodule update --init --recursive
+```
+
 ## Benchmark results: trade2, 14 server threads
 
 All six databases were measured on **AMD Ryzen 7 9700X** server with **8 physical cores / 16 SMT threads**.
