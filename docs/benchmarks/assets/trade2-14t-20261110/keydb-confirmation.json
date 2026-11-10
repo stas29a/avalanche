@@ -1,0 +1,46 @@
+{
+  "purpose": "confirm KeyDB high-concurrency spread with longer windows",
+  "definition": {
+    "image": "eqalpha/keydb@sha256:6537505c42355ca1f571276bddf83f5b750f760f07b2a185a676481791e388ac",
+    "entrypoint": "keydb-server",
+    "port": 6379,
+    "args": [
+      "--bind",
+      "0.0.0.0",
+      "--protected-mode",
+      "no",
+      "--save",
+      "",
+      "--appendonly",
+      "no",
+      "--server-threads",
+      "14",
+      "--server-thread-affinity",
+      "false",
+      "--min-clients-per-thread",
+      "1",
+      "--maxmemory",
+      "4294967296",
+      "--maxmemory-policy",
+      "noeviction",
+      "--loglevel",
+      "warning"
+    ],
+    "version": [
+      "keydb-server",
+      "--version"
+    ]
+  },
+  "server_threads": 14,
+  "client_threads": 2,
+  "server_cpuset": "0-6,8-14",
+  "client_cpuset": "7,15",
+  "clients": 128,
+  "mode": "mixed",
+  "seconds": 5,
+  "warmup_seconds": 1,
+  "repeats": 3,
+  "rps_median": 156266.8,
+  "rps_min": 121772.2,
+  "rps_max": 326399.6
+}

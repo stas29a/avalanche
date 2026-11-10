@@ -1,0 +1,7 @@
+.git
+.idea
+target
+tests/comparison/target
+tests/comparison/.venv
+tests/comparison/results
+tests/comparison/__pycache__

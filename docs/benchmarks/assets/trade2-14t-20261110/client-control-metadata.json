@@ -1,0 +1,32 @@
+{
+  "purpose": "client CPU sensitivity; both profiles use 14 server threads and the same binary",
+  "server_cpuset": "0-6,8-14",
+  "server_threads": 14,
+  "seconds": 2,
+  "warmup_seconds": 0.5,
+  "repeats": 3,
+  "clients": [
+    128,
+    512
+  ],
+  "mode": "mixed",
+  "keys": 1024,
+  "value_bytes": 256,
+  "profiles": {
+    "isolated": {
+      "threads": 2,
+      "cpuset": "7,15",
+      "shares_server_cpus": false
+    },
+    "shared": {
+      "threads": 14,
+      "cpuset": "0-15",
+      "shares_server_cpus": true
+    }
+  },
+  "source_raw_sha256": "69c66f1a23fae612d28ab19618df0819695a1b70d56b40723bfac44a9b9e641b",
+  "image": "sha256:cd5b6e5429826509e651abe7166168e25038c183f2cac829a987586ee676bfac",
+  "finished_utc": "2026-11-10T09:37:51Z",
+  "samples": 12,
+  "errors": 0
+}

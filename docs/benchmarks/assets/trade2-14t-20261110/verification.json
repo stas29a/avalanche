@@ -1,0 +1,30 @@
+{
+  "samples": 270,
+  "groups": 90,
+  "rust_database_tests_passed": 18,
+  "errors": 0,
+  "fully_validated_responses": 302686199,
+  "server_threads": 14,
+  "all_images_native_amd64": true,
+  "all_memory_metrics_recomputed_from_raw_samples": true,
+  "source_snapshots_verified": 17,
+  "host_networking_unchanged": true,
+  "client_control_samples": 12,
+  "client_control_errors": 0,
+  "keydb_confirmation_samples": 3,
+  "keydb_confirmation_errors": 0,
+  "high_concurrency_cpu_observations": {
+    "client": {
+      "count": 124,
+      "median_logical_cpu_usage": 1.9714906984877842
+    },
+    "server": {
+      "count": 124,
+      "median_logical_cpu_usage": 4.159795191865179
+    }
+  },
+  "benchmark_keys_per_avalanche_shard": {
+    "96": 1024
+  },
+  "raw_sha256": "69c66f1a23fae612d28ab19618df0819695a1b70d56b40723bfac44a9b9e641b"
+}
