@@ -1,6 +1,8 @@
 # Avalanche
 
-<img src="docs/assets/avalanche-logo-option-2.png" alt="Avalanche logo" width="200">
+<p align="center">
+  <img src="docs/assets/avalanche-logo-option-2.png" alt="Avalanche logo" width="300">
+</p>
 
 Avalanche is an experimental in-memory key-value server written in Rust. It
 supports binary `GET` and `SET` commands over TCP, uses Tokio for networking, and
